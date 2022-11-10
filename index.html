@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .has-children{
+            list-style: none;
+            margin-left: 43%;
+            
+        }
+
+        li{
+            border: 2px solid black;
+
+            border-radius: 5px;
+            padding:7px;
+            width:15%;
+            font-weight: 600;
+            text-align: center;
+            margin: 5px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="has-children">
+            <li class="list-items">1st child</li>
+            <li class="list-items">2nd child</li>
+            <li class="list-items">3rd child</li>
+            <li class="list-items">4th child</li>
+            <li class="list-items">5th child</li>
+            <li class="list-items">6th child</li>
+            <li class="list-items">7th child</li>
+            <li class="list-items">8th child</li>
+            <li class="list-items">9th child</li>
+            <li class="list-items">10th child</li>
+            <li class="list-items">11th child</li>
+            <li class="list-items">12th child</li>
+            <li class="list-items">13th child</li>
+            <li class="list-items">14th child</li>
+            <li class="list-items">15th child</li>
+            <li class="list-items">16th child</li>
+            <li class="list-items">17th child</li>
+           
+            
+
+
+        </ul>
+
+    </div>
+
+
+    <script>
+       const listItems=document.querySelectorAll('.list-items');
+
+       listItems[0].style.backgroundColor='blue';
+       listItems[0].style.color='white';
+       listItems[8].style.backgroundColor='green';
+       listItems[8].style.color='white';
+       listItems[16].style.backgroundColor='palevioletred';
+       listItems[16].style.color='white';
+
+       for(i=1;i<listItems.length-9;i++){
+        if(i%2!=0){
+            listItems[i].style.backgroundColor='lime';
+            listItems[i].style.color='white';
+        }
+    }
+        for(i=9;i<listItems.length-1;i++){
+        if(i%2!==0){
+            listItems[i].style.backgroundColor='lime';
+            listItems[i].style.color='white';
+        }
+        
+       }
+       
+       
+    
+    
+       
+     
+
+
+
+       
+    
+      
+    </script>
+	
+   
+
+
+    
+</body>
+       
+</html>
